@@ -1,5 +1,6 @@
 // R1 T03: Promenljive, podaci, tipovi
 // R2 T03.03: Konverzije numerickih tipova i zaokrugljivanje
+// https://sr.wikipedia.org/wiki/IEEE_754
 // https://petlja.org/sr-Latn-RS/kurs/17862/6/ 
 // https://www.h-schmidt.net/FloatConverter/IEEE754.html
 
