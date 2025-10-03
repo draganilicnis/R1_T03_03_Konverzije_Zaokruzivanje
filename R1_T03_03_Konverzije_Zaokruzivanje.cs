@@ -3,6 +3,7 @@
 // https://sr.wikipedia.org/wiki/IEEE_754
 // https://petlja.org/sr-Latn-RS/kurs/17862/6/ 
 // https://www.h-schmidt.net/FloatConverter/IEEE754.html
+// https://github.com/draganilicnis/R1_T03_03_Konverzije_Zaokruzivanje/blob/main/R1_T03_03_Konverzije_Zaokruzivanje.cs
 
 using System;
 
