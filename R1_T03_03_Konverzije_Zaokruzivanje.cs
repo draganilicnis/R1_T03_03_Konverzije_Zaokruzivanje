@@ -14,12 +14,19 @@ class R1_T03_03_Konverzije_Zaokruzivanje_Gubitak_tacnosti
 {
     static void Main()
     {
+        Console.WriteLine("{0:F}", 9007199254740993.0);
+        Console.WriteLine("{0:R}", 9007199254740993.0);
+    }
+
+
+    
+    static void Main_Menu()
+    {
         // Tip_Realan_broj();
         // Tip_Realan_broj_Primeri();
         // Tip_Realan_broj_ispis_Write();
         Main_Print();
     }
-
     static void Tip_Realan_broj_Primeri()
     {
         Console.WriteLine("Tip_Realan_broj_Primeri");
