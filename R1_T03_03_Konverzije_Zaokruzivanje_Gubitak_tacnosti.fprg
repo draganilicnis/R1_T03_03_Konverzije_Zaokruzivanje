@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Bingo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-13 08:31:26 po podne"/>
+        <attribute name="created" value="QmluZ287RFVTQU4zOzIwMjUtMTAtMTM7MTA6MjI6MzMgcHJlIHBvZG5lOzI5MzA="/>
+        <attribute name="edited" value="QmluZ287RFVTQU4zOzIwMjUtMTAtMTM7MDg6MzE6MjYgcG8gcG9kbmU7NTsyOTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="0.1 + 0.2" newline="True"/>
+            <output expression="0.3 / 0.1" newline="True"/>
+            <output expression="0.1 + 0.2 - 0.3" newline="True"/>
+            <output expression="9007199254740993.0" newline="True"/>
+            <output expression="9007199254740993.0 - 9007199254740992.0" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
