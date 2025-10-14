@@ -1,12 +1,18 @@
 // R1 T03: Promenljive, podaci, tipovi
 // R2 T03.03: Konverzije numerickih tipova i zaokrugljivanje
+// https://petlja.org/sr-Latn-RS/kurs/17862/6/1322#id7      // Kurs na Petlji za 1. razred
+// https://petlja.org/sr-Latn-RS/kurs/17862/4/1314          // Kurs na Petlji za 1. razred 3.1. Realni brojevi
 // https://sr.wikipedia.org/wiki/IEEE_754
-// https://petlja.org/sr-Latn-RS/kurs/17862/6/ 
 // https://www.h-schmidt.net/FloatConverter/IEEE754.html
+// https://numeral-systems.com/ieee-754-converter/
 // https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types?source=recommendations
+// https://learn.microsoft.com/en-us/cpp/build/ieee-floating-point-representation?view=msvc-170
 // https://juliensobczak.com/inspect/2019/03/10/floating-point-numbers-demystified/
 // https://www.sciencedirect.com/topics/computer-science/floating-point-addition
 // https://www.electronics-lab.com/article/binary-fractions/
+// https://github.com/draganilicnis/R1_T03_03_Konverzije_Zaokruzivanje
+// https://onlinegdb.com/4Ec_vXKQ3
+// https://onlinegdb.com/3xXm9f2-Y
 
 using System;
 
@@ -14,12 +20,60 @@ class R1_T03_03_Konverzije_Zaokruzivanje_Gubitak_tacnosti
 {
     static void Main()
     {
+        Console.WriteLine(0.1 + 0.2);                               // 0.30000000000000004
+        Console.WriteLine(0.3 / 0.1);                               // 2.9999999999999996
+        Console.WriteLine(0.1 + 0.2 - 0.3);                         // 5.551115123125783E-17
+        Console.WriteLine(3 - 0.3 /0.1);                            // 4.440892098500626E-16
+        Console.WriteLine(9007199254740993.0);                      // 9007199254740992
+        Console.WriteLine(9007199254740993.0 - 9007199254740992.0); // 0
+        Console.WriteLine(9007199254740993   - 9007199254740992  ); // 1
+        Console.WriteLine("{0:R}", 9007199254740993.0);             // format double    // 9007199254740992
+        Console.WriteLine("{0:F}", 9007199254740993.0);             // format decimal   // 9007199254740992.00
+        Console.WriteLine(1.0 / 10 + 2.0 / 10 - 3.0 / 10);          // 5.551115123125783E-17
+        Console.WriteLine(1 / 10.0 + 2 / 10.0 - 3 / 10.0);          // 5.551115123125783E-17
+        Console.WriteLine(1.0 / 10.0 + 2.0 / 10.0 - 3.0 / 10.0);    // 5.551115123125783E-17
+        Console.WriteLine(1.0 / 10.0);                              // 0.1
+    }
+}
+
+/*
+    static void Main_001()
+    {
+        Main_9007199254740993_0();
+        // Main_Menu();
+    }
+    static void Main_9007199254740993_0()
+    {
+        Main_9007199254740993_0_Write();
+        Main_9007199254740993_0_double();
+    }
+    static void Main_9007199254740993_0_Write()
+    {
         Console.WriteLine("{0:F}", 9007199254740993.0);
         Console.WriteLine("{0:R}", 9007199254740993.0);
     }
 
+    static void Main_9007199254740993_0_double()
+    {
+        Console.WriteLine("Kao double promenljiva");
+        double x = 9007199254740993.0;
+        Console.WriteLine("{0:F}", x);
+        Console.WriteLine("{0:R}", x);
+        x = x + 1;
+        Console.WriteLine("{0:F}", x);
+        Console.WriteLine("{0:R}", x);
+        x = x + 1;
+        Console.WriteLine("{0:F}", x);
+        Console.WriteLine("{0:R}", x);
+        x = x + 2;
+        Console.WriteLine("{0:F}", x);
+        Console.WriteLine("{0:R}", x);
+    }
 
-    
+
+
+
+    // ************************************
     static void Main_Menu()
     {
         // Tip_Realan_broj();
@@ -162,3 +216,4 @@ class R1_T03_03_Konverzije_Zaokruzivanje_Gubitak_tacnosti
         Console.WriteLine($"0.3m / 0.1m (decimal) = {m3 / m1}");
     }
 }
+*/
